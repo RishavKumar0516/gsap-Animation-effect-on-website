@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#d3eefe;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#43515c;
+    font-size:70px;
+    font-weight:lighter;
+    letter-spacing:-5px;
+    padding:50px 0 0 0;
+    z-index:999;
+}
+
+p{
+    font-family:poppins;
+    color:#43515c;
+    font-size:24px;
+    font-weight:100;
+    z-index:999;
+}
+.first-section{
+    width:100%;
+    height:150vh;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.first-section .images-wrapper{
+    position:absolute;
+}
+
+.ingredient-images{
+    position:absolute;
+    width:400px;
+    /* background:red; */
+    left:calc(50% - 400px); /* 50% mai se 400px minus karne par jitna distance bach jata hai, left se utni disance par ye container lie karega  */
+    height:530px;
+    top:420px;
+}
+
+/* now we target each of the individuals image and give left right top and bottom property. */
+
+.section_1_01{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.section_1_02{
+    position:absolute;
+    top:80px;
+    right:130px;
+}
+.section_1_03{
+    position:absolute;
+    top:100px;
+    right:10px;
+}
+.section_1_04{
+position:absolute;
+top:200px;
+right:120px;
+}
+.section_1_05{
+position:absolute;
+top:225px;
+right:150px;
+}
+.section_1_06{
+position:absolute;
+top:170px;
+right:210px;
+}
+.section_1_07{
+position:absolute;
+top:250px;
+right:10px;
+}
+.section_1_08{
+position:absolute;
+top:320px;
+right:110px;
+}
+.section_1_09{
+position:absolute;
+top:370px;
+right:10px;
+}
+
+/* targetting the second section */
+
+.second-section{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.second-section .images-wrapper{/* here we have to set the images-wrapper on top of another image-wrapper, so we are targeting the container not the image, and setting the position absolute. */
+    position:absolute;
+    display:flex;
+    padding:200px 0px;
+    top:20%;
+    overflow:hidden;
+}
+
+.image-container{
+    overflow:hidden;
+    height:100%;
+}
+.third-section{
+    width:100%;
+    height:150vh;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+} 
+.third-section .images-wrapper{
+    margin-top:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.third-section .images-wrapper img{/* for setting images on top of each other making images as position absolute. here we are targeting the image because we have to put images on top of another images. */
+position:absolute;
+}
+.forth-section{
+    width:100%;
+    height:150vh;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+.forth-section .images-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.forth-section .images-wrapper img{/* for setting images on top of each other making images as position absolute. here we are targeting the image because we have to put images on top of another images. */
+    position:absolute;
+}
